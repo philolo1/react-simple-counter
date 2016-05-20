@@ -1,0 +1,38 @@
+{
+  "name": "react-simple-counter",
+  "version": "1.0.0",
+  "description": "A simple counter example in react",
+  "main": "index.js",
+  "scripts": {
+    "dev": "watchify -vd -e main.js -o dist.js & http-server . -c 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philolo1/react-simple-counter.git"
+  },
+  "keywords": [
+    "react",
+    "counter"
+  ],
+  "author": "Patrick Klitzke <philologos14@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philolo1/react-simple-counter/issues"
+  },
+  "homepage": "https://github.com/philolo1/react-simple-counter#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "watchify": "^3.7.0"
+  }
+}
